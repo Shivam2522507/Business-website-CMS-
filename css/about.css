@@ -1,0 +1,280 @@
+*{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #fff!important;
+}
+.kanika-about,.kunal-about{
+    position: relative;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+.kanika-about{
+  margin-bottom: 30px;
+}
+.kunal-about{
+ height: 90vh;
+}
+.kunal-about img{
+    object-fit: cover;
+    height: 65vh;
+    width: 100%;
+    position: absolute;
+   
+}
+.kanika-about img{
+    object-fit: cover;
+    height: 80vh;
+    width: 100%;
+    transform: scaleX(-1);
+	  filter: FlipH;
+	-ms-filter: "FlipH";
+    position: absolute;
+   
+}
+.kunal-about-text{
+    position: absolute;
+    width: 600px;
+    top: 55%;
+    left: 10%;
+    
+}
+.kunal-about-text p, .kanika-about-text p{
+  font-size: 12px;
+    
+}
+.kanika-about-text{
+       position: absolute;
+    width: 560px;
+    top: 27%;
+    left: 50%;
+    
+}
+.kanika-about-text h4,.kunal-about-text h4{
+    color: red;
+}
+
+.team-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.team-card img{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+}
+.team-card h5{
+    color: red;
+}
+.team-card p {
+    text-align: center;
+    padding: 5px;
+}
+
+
+.hero-section{
+  min-height: 73vh;
+}
+.hero-img,.hero-img2,.hero-img3{
+  position: relative;
+}
+.hero-img img,.hero-img2 img{
+  height: 70vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.hero-img3 video{
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.expand-photo-link,.expand-cgi-link,.expand-video-link{
+  position: absolute;
+  bottom: 5%;
+  left: 20px;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 5px;
+  font-size: 16px;
+  overflow: hidden;
+  background: transparent;
+  text-shadow: -1px 2px 7px black;
+  display: block;
+  margin: auto;
+
+}
+.btn-close{
+  opacity: 1!important;
+}
+
+.modal-content{
+  background: transparent!important;
+  border: none;
+}
+.modal-header{
+  border-bottom: none;
+}
+#contact .modal-content{
+  background: white!important;
+  border: 2px solid black;
+}
+#contact .modal-header{
+  border-bottom: 2px solid rgb(157, 157, 157);
+}
+.modal-expand-pic {
+  width: 100%;
+  object-fit: contain;
+}
+.modal-expand-video {
+  display: flex;
+  justify-content: center;
+}
+.modal-expand-video {
+  display: flex;
+  justify-content: center;
+}
+.modal-expand-video iframe {
+  object-fit: cover;
+}
+
+@media screen and (min-width: 1881px) {
+  .kanika-about{
+    height: 105vh;
+  }
+ .kanika-about img{
+  height: 100vh;
+ }
+ .kunal-about img{
+  height: 80vh;
+ }
+ .kunal-about-text{
+  transform: scale(1.5);
+  top: 66%;
+  left: 20%;
+ }
+ .kanika-about-text{
+  transform: scale(1.5);
+  left: 60%;
+ }
+    
+  }
+
+@media screen and (max-width: 1061px) {
+  .kunal-about-text p ,.kanika-about-text p{
+    font-size: 14px;
+  }
+  .kunal-about-text{
+    width: 480px;
+  }
+  .kanika-about-text{
+    width: 450px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .kanika-about-text{
+    width: 420px;
+    top: 18%;
+    left: 45%;
+  }
+  .kanika-about img{
+    object-position: 50% 50% ;
+    overflow: hidden;
+   
+}
+.kunal-about{
+  min-height: 70vh;
+}
+.kunal-about-text {
+  top: 55%;
+}
+}
+@media screen and (max-width: 764px) {
+  .kanika-about-text{
+    width: 400px;
+    left: 39%;
+  }
+  .kanika-about img{
+    object-position: 15% 50% ;
+   
+   
+}
+}
+@media screen and (max-width: 654px) {
+  .kanika-about-text{
+    width: 350px;
+    left: 39%;
+  }
+  .kanika-about-text p{
+    font-size: 12px;
+  }
+  .kanika-about img{
+    object-position: 30% 50% ;
+   
+   
+}
+
+}
+@media screen and (max-width: 569px) {
+  .kunal-about,.kanika-about{
+    height: 60vh;
+  }
+  .kanika-about img , .kunal-about img{
+    height: 54vh;
+  }
+  .kanika-about-text{
+    width: 300px;
+  }
+  .kunal-about-text p ,.kanika-about-text p{
+    font-size: 11px;
+  }
+  .kunal-about-text{
+    width: 400px;
+  }
+  .kanika-about img{
+    object-position: -30% 50% ;
+
+}
+}
+@media screen and (max-width: 502px) {
+ .kanika-about,.kunal-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .kanika-about{
+    min-height: 100vh;
+  }
+  .kunal-about-text{
+    width: 100%;
+    padding: 10px;
+  left: 0;
+  }
+ .kanika-about-text{
+  width: 100%;
+  top: 50%;
+  left: 0;
+  padding: 10px;
+ }
+ .kunal-about img{
+  position: relative;
+  width: 100%;
+  object-position: 90% 50% ;
+ }
+ .kanika-about img{
+  position: relative;
+  width: 100%;
+  object-position: 70% 50% ;
+
+}
+
+}
